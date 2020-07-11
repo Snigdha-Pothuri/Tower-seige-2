@@ -15,7 +15,8 @@ class polygon {
         World.add(world,this.body);
       }
       display(){
-        push();
+        push(); 
+        fill("pink");
         translate(this.body.position.x, this.body.position.y);
         ellipseMode(RADIUS) 
         ellipse(0,0,this.radius,this.radius) 

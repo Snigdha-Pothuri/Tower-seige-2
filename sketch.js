@@ -18,23 +18,36 @@ function setup() {
   box4=new Box(420,235,30,40)
   box5=new Box(450,235,30,40) 
 
+  box6=new Box2(360,195,30,40)
+  box7=new Box2(390,195,30,40)
+  box8=new Box2(420,195,30,40)  
 
-  box6=new Box(360,195,30,40)
-  box7=new Box(390,195,30,40)
-  box8=new Box(420,195,30,40)  
+  box9=new Box3(390,155,30,40)
 
-  box9=new Box(390,155,30,40)
+   
+  box11=new Box (580,125,30,40)
+  box12= new Box(610,125,30,40)
+  box13=new Box(640,125,30,40)
+  box14=new Box(670,125,30,40)
+  box15=new Box(700,125,30,40) 
 
+  box16=new Box2(610,85,30,40)
+  box17=new Box2(640,85,30,40)
+  box18=new Box2(670,85,30,40)  
 
+  box19=new Box3(640,45,30,40)
+  
  polygon1 = new polygon(150,150,20);
   
  slingshot = new SlingShot(polygon1.body,{x:200, y:200});
 
-  ground= new Ground(200,395,800,50)
+  ground= new Ground(200,395,1600,50) 
+  stand=new Ground(400,280,170,20) 
+  stand1=new Ground(660,225,170,20)
 }
 
 function draw() {
-  background(255,255,255);  
+  background("#78F400");  
   
   Engine.update(engine); 
 
@@ -49,14 +62,24 @@ function draw() {
   box7.display();
   box8.display();
   box9.display(); 
+ 
+  box11.display();
+  box12.display();
+  box13.display();
+  box14.display();
+  box15.display();
+  box16.display();
+  box17.display();
+  box18.display();
+  box19.display(); 
 
   polygon1.display(); 
 
   slingshot.display(); 
 
   ground.display();
-
-
+   stand.display ();
+   stand1.display();
  
 
 

@@ -11,28 +11,32 @@ class Box  {
    // this.image = loadImage("sprites/base.png");
     World.add(world, this.body);
   }
-  display(){
-    if(this.body.speed < 3){
+  display(){ 
+   // console.log(this.body.speed)
+    if(this.body.speed < 4){
       push(); 
+      fill("blue")
       var pos =this.body.position;
      rect(pos.x, pos.y, this.width, this.height);
       rectMode(CENTER);
       pop();
      } 
-  else{
-      World.remove(world, this.body);
-      push();
-      this.Visibility = this.Visibility - 5;
-      tint(255,this.Visibility); 
-      //image(this.image, this.body.position.x, this.body.position.y, 50, 50);
-      rect(this.pos.x, this.body.pos.y,50,50);
-      pop();
+  else{ 
+    var pos =this.body.position;
+      World.remove(world, this.body);  
+     // rect(pos.x, pos.y,50,50);
+    //  push(); 
+      //rect(this.pos.x, this.body.pos.y,50,50);
+     // this.Visibility = this.Visibility - 5;
+     // tint(255,this.Visibility); 
+      
+     // pop();
     }
-   
+  }
      }
   
   
   
   
-}
-}
+
+
