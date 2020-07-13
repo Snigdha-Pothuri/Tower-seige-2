@@ -42,8 +42,8 @@ function setup() {
  slingshot = new SlingShot(polygon1.body,{x:200, y:200});
 
   ground= new Ground(200,395,1600,50) 
-  stand=new Ground(400,280,170,20) 
-  stand1=new Ground(660,225,170,20)
+  stand=new Ground(405,280,170,20) 
+  stand1=new Ground(655,150,170,20)
 }
 
 function draw() {
